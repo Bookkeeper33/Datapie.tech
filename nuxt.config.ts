@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     typescript: {
         typeCheck: true,
     },
+    tailwindcss: {
+        exposeConfig: true,
+    },
     googleFonts: {
         families: {
             Roboto: true,

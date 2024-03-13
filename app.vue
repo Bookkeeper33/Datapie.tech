@@ -1,7 +1,9 @@
 <template>
-    <Html>
-        <NuxtLayout>
+    <div class="flex min-h-screen flex-col">
+        <Header />
+        <div class="flex-auto">
             <NuxtPage />
-        </NuxtLayout>
-    </Html>
+        </div>
+        <Footer />
+    </div>
 </template>
