@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
-        "@nuxt/image",
-        "@nuxtjs/eslint-module",
-        "@nuxtjs/tailwindcss",
-        "@nuxtjs/color-mode",
-        "@nuxtjs/google-fonts",
-        "nuxt-headlessui",
-        "nuxt-icon"
+      "@nuxt/image",
+      "@nuxtjs/eslint-module",
+      "@nuxtjs/tailwindcss",
+      "@nuxtjs/color-mode",
+      "@nuxtjs/google-fonts",
+      "nuxt-headlessui",
+      "nuxt-icon",
+      "@vueuse/nuxt",
     ],
     typescript: {
         typeCheck: true,
@@ -17,6 +18,7 @@ export default defineNuxtConfig({
         classSuffix: ''
     },
     tailwindcss: {
+        cssPath:'~/assets/css/main.css',
         exposeConfig: true
     },
     googleFonts: {
