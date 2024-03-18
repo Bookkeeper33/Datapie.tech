@@ -22,7 +22,7 @@
             >
                 <HeadlessDisclosurePanel>
                     <ul
-                        class="flex flex-col items-start gap-y-1 py-2 font-normal text-stone-100 shadow-lg"
+                        class="flex flex-col items-start gap-y-1 py-2 dark:text-stone-100"
                     >
                         <a
                             v-for="(link, index) of subLinks"

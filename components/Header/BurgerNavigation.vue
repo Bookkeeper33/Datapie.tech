@@ -9,7 +9,7 @@
     >
         <ul
             v-show="isNavOpen"
-            class="flex flex-col border-b *:border-t *:py-2 lg:hidden"
+            class="flex flex-col border-b border-b-slate-900 *:border-t *:border-t-slate-900 *:py-2 dark:border-stone-200 *:dark:border-stone-200 lg:hidden"
         >
             <li class="flex flex-col gap-2 text-center">
                 <HeaderNavDisclosure
@@ -17,15 +17,15 @@
                     :sub-links="services.subLinks"
                 />
             </li>
-            <li>Cases</li>
-            <li>Blog</li>
+            <li class="">Cases</li>
+            <li class="">Blog</li>
             <li class="flex flex-col gap-y-2 text-center">
                 <HeaderNavDisclosure
                     :title="about.title"
                     :sub-links="about.subLinks"
                 />
             </li>
-            <li>Contacts</li>
+            <li class="">Contacts</li>
         </ul>
     </Transition>
 </template>
