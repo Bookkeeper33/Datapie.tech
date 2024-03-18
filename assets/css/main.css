@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .custom-them-night {
+        background-color: #0b0b0b;
+        background-image: radial-gradient(
+                white,
+                rgba(255, 255, 255, 0.947) 1px,
+                transparent 1px
+            ),
+            radial-gradient(
+                white,
+                rgba(255, 255, 255, 0.947) 1px,
+                transparent 1px
+            ),
+            radial-gradient(
+                white,
+                rgba(255, 255, 255, 0.947) 1px,
+                transparent 1px
+            ),
+            radial-gradient(
+                rgba(255, 255, 255, 0.4),
+                rgba(255, 255, 255, 0.947) 1px,
+                transparent 1px
+            );
+            
+        background-size:
+            550px 550px,
+            350px 350px,
+            250px 250px,
+            150px 150px;
+        background-position:
+            0 0,
+            40px 60px,
+            130px 270px,
+            70px 100px;
+    }
+}

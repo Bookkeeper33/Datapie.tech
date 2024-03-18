@@ -2,21 +2,30 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
-        "@nuxtjs/eslint-module",
-        "@nuxtjs/tailwindcss",
-        "@nuxt/image",
-        "@nuxtjs/google-fonts",
+      "@nuxt/image",
+      "@nuxtjs/eslint-module",
+      "@nuxtjs/tailwindcss",
+      "@nuxtjs/color-mode",
+      "@nuxtjs/google-fonts",
+      "nuxt-headlessui",
+      "nuxt-icon",
+      "@vueuse/nuxt",
     ],
     typescript: {
         typeCheck: true,
     },
+    colorMode: {
+        classSuffix: ''
+    },
     tailwindcss: {
-        exposeConfig: true,
+        cssPath:'~/assets/css/main.css',
+        exposeConfig: true
     },
     googleFonts: {
         families: {
             Roboto: true,
             Lato: true,
+            'DM Sans': true
         },
         download: true,
         display: "swap",
