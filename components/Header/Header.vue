@@ -1,50 +1,35 @@
 <script lang="ts" setup>
-    interface State {
-        screenWidth: undefined | number;
-        isMenuOpen: boolean;
-    }
+    const isNavOpen = ref(false);
+    const { width } = useWindowSize();
+    const MAX_SCREEN_SIZE = 1024;
 
-    const state: State = reactive({
-        screenWidth: undefined,
-        isMenuOpen: false,
-    });
-
-    onMounted(() => {
-        window.addEventListener("resize", handleResize);
-    });
-
-    onUnmounted(() => {
-        window.removeEventListener("resize", handleResize);
-    });
-
-    const updateScreenWidth = () => {
-        const MAX_SCREEN_SIZE = 1024;
-        const newVal = window.innerWidth;
-
-        if (newVal > MAX_SCREEN_SIZE) {
-            state.isMenuOpen = false;
-        }
-        state.screenWidth = newVal;
+    const services: NavData = {
+        title: "What we do",
+        subLinks: [
+            "AI Services",
+            "Data Services",
+            "Data Visualization",
+            "Dashboard Development",
+        ],
     };
-
-    const handleResize = () => {
-        updateScreenWidth();
+    const about: NavData = {
+        title: "About us",
+        subLinks: ["Our Story", "Our Values", "Our Team"],
     };
-
     const toggleBurger = () => {
-        state.isMenuOpen = !state.isMenuOpen;
+        isNavOpen.value = !isNavOpen.value;
     };
 </script>
 
 <template>
     <header>
         <div
-            class="mx-auto flex flex-col gap-y-4 px-2 py-5 lg:container md:px-7 md:py-5 lg:flex-row lg:items-center lg:justify-between"
+            class="mx-auto flex flex-col gap-y-10 px-4 py-5 lg:container md:px-7 md:py-5 lg:flex-row lg:items-center lg:justify-between"
         >
             <div class="flex flex-1 items-center">
                 <div class="flex items-center gap-x-5">
                     <img class="h-12 w-12" src="assets/icons/logo.svg" />
-                    <a class="text-2xl font-bold lg:text-3xl">
+                    <a href="#" class="text-2xl font-bold lg:text-3xl">
                         Datapie<span
                             class="text-themePurple dark:text-themeGreen"
                             >.</span
@@ -52,14 +37,23 @@
                     </a>
                 </div>
                 <HeaderBurgerMenu
-                    :is-open="state.isMenuOpen"
+                    :is-open="isNavOpen"
                     @toggle-nav="toggleBurger"
                 />
             </div>
-            <HeaderNavigation
-                :class="{ hidden: !state.isMenuOpen }"
-                class="lg:flex"
-            />
+            <nav>
+                <HeaderNavigation
+                    v-if="width >= MAX_SCREEN_SIZE"
+                    :services="services"
+                    :about="about"
+                />
+                <HeaderBurgerNavigation
+                    v-else
+                    :is-nav-open="isNavOpen"
+                    :services="services"
+                    :about="about"
+                />
+            </nav>
         </div>
     </header>
 </template>

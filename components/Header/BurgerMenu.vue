@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-    const props = defineProps<{ isOpen: boolean }>();
+    defineProps<{ isOpen: boolean }>();
     defineEmits(["toggleNav"]);
 </script>
 
@@ -7,7 +7,7 @@
     <ClientOnly>
         <button
             type="button"
-            class="focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 ml-auto inline-flex flex-shrink-0 items-center gap-x-2 rounded-full p-2 text-sm font-medium text-gray-700 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset disabled:cursor-not-allowed disabled:opacity-75 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white lg:hidden"
+            class="focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 ml-auto inline-flex flex-shrink-0 items-center gap-x-2 rounded-full py-2 text-sm font-medium text-gray-700 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset disabled:cursor-not-allowed disabled:opacity-75 dark:text-gray-200 lg:hidden"
             aria-label="Close Menu"
             @click="$emit('toggleNav')"
         >
