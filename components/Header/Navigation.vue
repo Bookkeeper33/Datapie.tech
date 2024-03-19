@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-    defineProps<{ services: NavData; about: NavData }>();
+    defineProps<{ services: NavData }>();
 </script>
 
 <template>
@@ -14,12 +14,7 @@
         </li>
         <li>Cases</li>
         <li>Blog</li>
-        <li>
-            <HeaderNavPopOver
-                :title="about.title"
-                :sub-links="about.subLinks"
-            />
-        </li>
+        <li>About us</li>
         <li>Contacts</li>
     </ul>
 </template>
