@@ -30,15 +30,17 @@
                 />
             </div>
             <nav>
-                <HeaderNavigation
-                    v-if="width >= MAX_SCREEN_SIZE"
-                    :services="services"
-                />
-                <HeaderBurgerNavigation
-                    v-else
-                    :is-nav-open="isNavOpen"
-                    :services="services"
-                />
+                <ClientOnly>
+                    <HeaderNavigation
+                        v-if="width >= MAX_SCREEN_SIZE"
+                        :services="services"
+                    />
+                    <HeaderBurgerNavigation
+                        v-else
+                        :is-nav-open="isNavOpen"
+                        :services="services"
+                    />
+                </ClientOnly>
             </nav>
         </div>
     </header>
