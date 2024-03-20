@@ -1,6 +1,6 @@
 <template>
     <ul
-        class="flex gap-x-5 *:cursor-pointer *:rounded-md *:p-1 *:shadow-md *:ring-1 *:ring-themePurple dark:*:ring-themeBlue"
+        class="flex gap-x-5 *:cursor-pointer *:rounded-md *:p-1 *:shadow-md *:ring-2 *:ring-zinc-900 dark:*:ring-themeBlue"
     >
         <li class="transition active:scale-95 lg:hover:-translate-y-1">
             <Icon name="line-md:linkedin" size="1.3em" />

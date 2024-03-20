@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <header class="bg-zinc-100 dark:bg-[#0b0b0b]">
+    <header class="dark:bg-[#0b0b0b]">
         <div
             class="mx-auto flex flex-col gap-y-10 px-4 py-5 lg:container md:px-7 md:py-5 lg:flex-row lg:items-center lg:justify-between"
         >

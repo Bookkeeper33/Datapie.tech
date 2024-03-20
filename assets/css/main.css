@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply bg-neutral-200 dark:custom-them-night;
+        @apply bg-gradient-to-tr from-[#7354F2] to-[#80F08B] dark:custom-them-night;
     }
 }
 
