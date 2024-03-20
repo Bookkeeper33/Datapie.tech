@@ -1,6 +1,6 @@
 <template>
-    <h3 class="text-lg font-semibold">Contacts:</h3>
-    <div class="flex flex-col gap-y-1 text-lg">
+    <h3 class="border-b border-b-gray-800 text-lg font-semibold">Contacts:</h3>
+    <div class="flex flex-col gap-y-1 text-lg ">
         <span class="flex items-center gap-x-1">
             <Icon
                 name="material-symbols-light:stacked-email-outline-sharp"
