@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="dark:custom-them-night flex min-h-screen flex-col bg-neutral-200 font-dm dark:text-stone-100"
-    >
+    <div class="flex min-h-screen flex-col font-dm dark:text-stone-100">
         <Header />
         <div class="flex-auto">
             <NuxtPage />

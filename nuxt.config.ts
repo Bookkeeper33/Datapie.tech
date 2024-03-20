@@ -15,6 +15,8 @@ export default defineNuxtConfig({
         typeCheck: true,
     },
     colorMode: {
+        preference: 'dark',
+        fallback: 'light',
         classSuffix: ''
     },
     tailwindcss: {
@@ -30,4 +32,5 @@ export default defineNuxtConfig({
         download: true,
         display: "swap",
     },
+    
 });
