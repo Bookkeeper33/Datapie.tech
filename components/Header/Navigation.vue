@@ -4,7 +4,7 @@
 
 <template>
     <ul
-        class="hidden lg:flex lg:flex-row lg:items-center lg:gap-x-5 lg:rounded-full lg:px-4 lg:py-2 lg:text-lg lg:ring-1 lg:ring-gray-200 lg:dark:ring-gray-800"
+        class="hidden lg:flex lg:flex-row lg:items-center lg:gap-x-5 lg:rounded-full lg:px-4 lg:py-2 lg:text-lg lg:ring-1 lg:ring-gray-800"
     >
         <li>
             <HeaderNavPopOver
