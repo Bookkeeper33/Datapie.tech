@@ -11,7 +11,7 @@
     <ClientOnly>
         <HeadlessSwitch
             v-model="darkMode"
-            class="focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-full p-1.5 text-sm font-medium text-gray-700 hover:bg-stone-100 hover:text-gray-900 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset disabled:cursor-not-allowed disabled:opacity-75 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
+            class="focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-full p-1.5 text-sm font-medium text-gray-700 hover:bg-zinc-200 hover:text-gray-900 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset disabled:cursor-not-allowed disabled:opacity-75 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
             @click="
                 setColorTheme(
                     $colorMode.preference === 'dark' ? 'light' : 'dark'

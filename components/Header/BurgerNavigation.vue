@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+    defineProps<{ isNavOpen: boolean; services: NavData }>();
+</script>
+
 <template>
     <Transition
         enter-active-class="transition duration-500 ease-in-out"
@@ -17,21 +21,10 @@
                     :sub-links="services.subLinks"
                 />
             </li>
-            <li class="">Cases</li>
-            <li class="">Blog</li>
-            <li class="flex flex-col gap-y-2 text-center">
-                <HeaderNavDisclosure
-                    :title="about.title"
-                    :sub-links="about.subLinks"
-                />
-            </li>
-            <li class="">Contacts</li>
+            <li>Cases</li>
+            <li>Blog</li>
+            <li>About us</li>
+            <li>Contacts</li>
         </ul>
     </Transition>
 </template>
-
-<script lang="ts" setup>
-    defineProps<{ isNavOpen: boolean; services: NavData; about: NavData }>();
-</script>
-
-<style></style>
