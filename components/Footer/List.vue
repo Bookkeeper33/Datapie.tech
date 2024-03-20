@@ -11,7 +11,7 @@
             <li
                 v-for="(link, index) in subLinks"
                 :key="index"
-                class="flex items-center space-x-2 transition hover:translate-x-2"
+                class="flex items-center space-x-2 transition active:translate-x-2 lg:hover:translate-x-2"
             >
                 <Icon
                     class="text-themeGreen"

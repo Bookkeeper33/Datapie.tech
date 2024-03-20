@@ -19,21 +19,8 @@
                         >tech
                     </a>
                 </div>
-                <div class="flex gap-x-10 lg:justify-center">
-                    <div class="w-full space-y-8 sm:w-auto">
-                        <div class="">
-                            <h3 class="text-lg font-semibold">
-                                You have a new project?
-                            </h3>
-                            <h3 class="text-lg font-semibold">
-                                or want to say hello...
-                            </h3>
-                        </div>
-                        <FooterContact />
-                    </div>
-                </div>
                 <div
-                    class="flex flex-col gap-4 sm:col-span-2 sm:flex-row sm:items-center lg:col-span-1 lg:items-start"
+                    class="flex flex-col justify-start gap-4 sm:col-span-2 sm:flex-row sm:items-center lg:col-span-1 lg:items-start"
                 >
                     <FooterList
                         :title="services.title"
@@ -43,6 +30,11 @@
                         :title="company.title"
                         :sub-links="company.subLinks"
                     />
+                </div>
+                <div
+                    class="space-y-3 rounded-md bg-themeGreen px-5 py-4 shadow-md dark:bg-themePurple dark:shadow-slate-800 dark:drop-shadow-md sm:justify-self-end"
+                >
+                    <FooterContact />
                 </div>
             </div>
             <div class="flex items-center justify-between">
