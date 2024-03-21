@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <HeadlessPopover v-slot="{ open }" class="">
+    <HeadlessPopover v-slot="{ open }">
         <HeadlessPopoverButton class="focus:outline-none focus-visible:ring-0"
             >{{ title }}
             <Icon
