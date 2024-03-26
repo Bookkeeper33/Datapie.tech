@@ -10,6 +10,8 @@ export default defineNuxtConfig({
       "nuxt-headlessui",
       "nuxt-icon",
       "@vueuse/nuxt",
+      "vue3-carousel-nuxt",
+      "@nuxtjs/device"
     ],
     typescript: {
         typeCheck: true,
@@ -32,5 +34,7 @@ export default defineNuxtConfig({
         download: true,
         display: "swap",
     },
-    
+    device: {
+        refreshOnResize: true
+      }
 });
