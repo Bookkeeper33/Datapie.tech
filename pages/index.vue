@@ -1,3 +1,6 @@
 <template>
-    <MainPageWelcome />
+    <main class="flex-auto">
+        <MainPageWelcome />
+        <MainPageServices />
+    </main>
 </template>
