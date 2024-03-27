@@ -36,5 +36,18 @@ export default defineNuxtConfig({
     },
     device: {
         refreshOnResize: true
-      }
+      },
+     vue:{
+        compilerOptions: {
+            isCustomElement: (tag) => tag.includes('swiper')
+          },
+     },
+    imports: {
+        presets: [
+            {
+                from: 'swiper/element/bundle',
+                imports: ['register']
+            }
+        ]
+    }
 });
