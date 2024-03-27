@@ -5,6 +5,7 @@
 
     onMounted(() => {
         const params = {
+            speed: 1000,
             effect: "fade",
             fadeEffect: {
                 crossFade: true,
