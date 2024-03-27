@@ -56,7 +56,7 @@
                     v-if="width >= MAX_SCREEN_SIZE"
                     :services="services"
                 />
-                <MainPageServicesCarousel v-else :services="services" />
+                <MainPageServicesSwiper v-else :services="services" />
             </ClientOnly>
         </div>
     </section>
