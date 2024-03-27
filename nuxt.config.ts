@@ -10,7 +10,6 @@ export default defineNuxtConfig({
       "nuxt-headlessui",
       "nuxt-icon",
       "@vueuse/nuxt",
-      "vue3-carousel-nuxt",
       "@nuxtjs/device"
     ],
     typescript: {
