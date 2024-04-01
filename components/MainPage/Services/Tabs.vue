@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-    defineProps<{ services: Service[] }>();
+    defineProps<{ services: Content[] }>();
 </script>
 
 <template>
