@@ -43,12 +43,7 @@
             <h2
                 class="mb-5 text-center text-3xl font-bold sm:mb-10 lg:text-5xl"
             >
-                What we do
-                <Icon
-                    class="text-themePurple dark:text-themeGreen"
-                    name="ion:analytics-sharp"
-                    size="1.5em"
-                />
+                What we do ?
             </h2>
 
             <ClientOnly>
