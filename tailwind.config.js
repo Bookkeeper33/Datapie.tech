@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
     content: [],
     darkMode: 'class',
@@ -14,7 +15,11 @@ export default {
                 themeBlue: "#6EDEF6",
                 themeGreen: "#80F08B",
             },
+            backgroundImage: {
+                'radial-dark':'radial-gradient(1500px circle at var(--glow-x) var(--glow-y),rgba(80, 246, 158, 0.9), transparent 18%)',
+                'radial': 'radial-gradient(1500px circle at var(--glow-x) var(--glow-y), rgba(31, 115, 233, 0.9), transparent 18%)',
+            }
         },
     },
-    plugins: [require('daisyui')]
+    plugins: [require('daisyui')],
 };
