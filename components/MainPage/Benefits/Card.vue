@@ -2,7 +2,7 @@
     defineProps<{ benefit: Content }>();
 
     const card = ref<HTMLElement | null>(null);
-    const { x, y } = useMouse({ target: card, type: "client" });
+    const { x, y } = useMouse({ target: card, type: "client", touch: false });
     const { left, top } = useElementBounding(card);
     const { width } = useWindowSize();
     const MIN_SCREEN_WIDTH = 1024;
