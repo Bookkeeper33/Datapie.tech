@@ -12,7 +12,7 @@
 
     const cardStyle = computed(() => {
         if (width.value < MIN_SCREEN_WIDTH) {
-            return {};
+            return;
         } else {
             return {
                 "--glow-x": `${glowX.value}px`,
@@ -25,7 +25,7 @@
 <template>
     <div
         ref="card"
-        class="group card card-compact relative w-96 cursor-pointer overflow-hidden p-5 transition duration-100 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:z-[2] before:rounded-[inherit] before:opacity-0 hover:bg-radial dark:hover:bg-radial-dark sm:p-[3px]"
+        class="group card card-compact relative w-96 cursor-pointer overflow-hidden p-5 transition duration-100 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:z-[2] before:rounded-[inherit] before:opacity-0 sm:p-[3px] lg:hover:bg-radial dark:lg:hover:bg-radial-dark"
         :style="cardStyle"
     >
         <div
