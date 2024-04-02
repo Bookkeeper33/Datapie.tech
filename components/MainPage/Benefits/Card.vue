@@ -25,7 +25,7 @@
 <template>
     <div
         ref="card"
-        class="group card card-compact relative w-96 cursor-pointer overflow-hidden p-5 transition duration-100 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:z-[2] before:rounded-[inherit] before:opacity-0 sm:p-[3px] lg:hover:bg-radial dark:lg:hover:bg-radial-dark"
+        class="group card card-compact relative w-96 cursor-pointer overflow-hidden transition duration-100 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:z-[2] before:rounded-[inherit] before:opacity-0 sm:p-[3px] lg:hover:bg-radial dark:lg:hover:bg-radial-dark"
         :style="cardStyle"
     >
         <div

@@ -38,7 +38,7 @@
 </script>
 
 <template>
-    <section id="technologies" class="space-y-5">
+    <section id="technologies" class="space-y-5 px-5">
         <h2 class="text-center text-xl font-bold sm:text-2xl">
             Our ML and data solutions are powered by the following technologies
         </h2>
