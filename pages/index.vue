@@ -3,5 +3,6 @@
         <MainPageWelcome />
         <MainPageServices />
         <MainPageBenefits />
+        <MainPageTechnologies />
     </main>
 </template>
