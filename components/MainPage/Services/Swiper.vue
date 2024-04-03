@@ -24,6 +24,11 @@
         Object.assign(swiper.value, params);
         swiper.value.initialize();
     });
+
+    onUnmounted(() => {
+        swiper.value.destroy();
+    });
+
     register();
 </script>
 

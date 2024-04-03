@@ -33,7 +33,9 @@
         Object.assign(swiper.value, params);
         swiper.value.initialize();
     });
-
+    onUnmounted(() => {
+        swiper.value.destroy();
+    });
     register();
 </script>
 
@@ -51,7 +53,7 @@
                 <Icon
                     :name="tech"
                     size="10em"
-                    class="text-gray-900 dark:text-themePurple"
+                    class="text-gray-900 dark:text-themeGreen"
                 />
             </swiper-slide>
         </swiper-container>
