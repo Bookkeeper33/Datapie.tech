@@ -4,5 +4,6 @@
         <MainPageServices />
         <MainPageBenefits />
         <MainPageTechnologies />
+        <MainPageTestimonials />
     </main>
 </template>

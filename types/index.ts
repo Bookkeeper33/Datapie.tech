@@ -10,3 +10,11 @@ type Content = {
     img: string;
 };
 
+type Testimonial = {
+    id: number;
+    quote:string;
+    author: string;
+    occupation:string;
+    rating: number;
+    avatar: string;
+}
