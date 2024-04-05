@@ -69,7 +69,7 @@
             },
             autoplay: {
                 delay: 5000,
-                disableOnInteraction: true,
+                disableOnInteraction: false,
             },
             loop: true,
             speed: 700,
@@ -88,7 +88,7 @@
 <template>
     <section id="testimonials">
         <div class="px-5 py-5 sm:px-0 sm:py-14">
-            <h2 class="text-center text-3xl md:text-5xl">What They Say</h2>
+            <h2 class="text-center text-3xl md:text-5xl">What They Say ?</h2>
             <p class="mt-3 text-center text-lg font-semibold">
                 Don’t just take our word for it. Hear what our clients have to
                 say about us:
