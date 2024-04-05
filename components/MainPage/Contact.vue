@@ -1,7 +1,7 @@
 <template>
     <section id="contact" class="bg-cover bg-center bg-no-repeat">
         <div
-            class="container mx-auto flex min-h-96 flex-col justify-center gap-y-12 px-5 pb-14 lg:px-0"
+            class="container mx-auto flex min-h-96 flex-col justify-center gap-y-12 px-5 py-10 lg:px-0"
         >
             <div class="text-center">
                 <h2 class="text-center text-3xl font-bold md:text-5xl">
