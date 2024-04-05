@@ -25,9 +25,6 @@
         swiper.value.initialize();
     });
 
-    onUnmounted(() => {
-        swiper.value.destroy();
-    });
 
     register();
 </script>
