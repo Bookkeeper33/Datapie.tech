@@ -26,6 +26,10 @@
                     slidesPerView: 1,
                 },
             },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             speed: 500,
             loop: true,
         };
@@ -38,7 +42,7 @@
 </script>
 
 <template>
-    <section id="technologies" class="space-y-5 px-5">
+    <section id="technologies" class="space-y-5 px-5 py-10 lg:p-0">
         <h2 class="text-center text-xl font-bold sm:text-2xl">
             Our ML and data solutions are powered by the following technologies
         </h2>
