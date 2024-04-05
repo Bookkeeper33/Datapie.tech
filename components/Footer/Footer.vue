@@ -4,7 +4,7 @@
 
 <template>
     <footer
-        class="p-5 ring-1 ring-zinc-800 dark:bg-transparent dark:ring-gray-800 lg:py-5"
+        class="px-4 py-10 ring-1 ring-zinc-800 dark:bg-transparent dark:ring-gray-800 lg:pb-5 lg:pt-12"
     >
         <div class="container space-y-10 sm:mx-auto">
             <div class="grid gap-y-10 lg:grid-cols-3">
