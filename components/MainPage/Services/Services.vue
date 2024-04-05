@@ -38,7 +38,7 @@
 </script>
 
 <template>
-    <section id="services">
+    <section id="services" class="py-10">
         <div class="px-4 py-10 sm:p-0">
             <h2
                 class="mb-5 text-center text-3xl font-bold sm:mb-10 lg:text-5xl"

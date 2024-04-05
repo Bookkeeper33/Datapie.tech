@@ -48,7 +48,7 @@
         id="benefits"
         class="relative flex flex-col justify-center gap-y-10 py-10 before:absolute before:block before:h-full before:w-full before:bg-[url('assets/images/gradient.png')] before:bg-cover before:bg-center before:opacity-60 sm:min-h-dvh"
     >
-        <div class="container relative z-20 mx-auto px-5">
+        <div class="container relative z-20 mx-auto">
             <div class="text-center">
                 <h2 class="mb-5 text-3xl font-bold lg:text-5xl">
                     Why choose us ?

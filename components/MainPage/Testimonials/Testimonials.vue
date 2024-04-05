@@ -87,7 +87,7 @@
         id="testimonials"
         class="bg-[url('/assets/images/gradient.png')] bg-cover bg-center"
     >
-        <div class="px-5 py-5 sm:px-0 sm:py-14">
+        <div class="px-5 py-5 sm:px-0 sm:py-10">
             <h2 class="text-center text-3xl font-bold md:text-5xl">
                 What They Say ?
             </h2>
@@ -103,7 +103,7 @@
                 <swiper-slide
                     v-for="testimonial in testimonials"
                     :key="testimonial.id"
-                    class="flex flex-col items-center py-10"
+                    class="flex flex-col items-center"
                 >
                     <MainPageTestimonialsTestimonial
                         :testimonial="testimonial"

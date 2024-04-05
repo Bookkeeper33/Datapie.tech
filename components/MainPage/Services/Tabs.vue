@@ -16,7 +16,7 @@
                 <button
                     class="px-4 py-2 text-base outline-none lg:text-xl"
                     :class="{
-                        'relative z-50 scale-105 from-red-400 via-violet-200 to-cyan-300 font-bold transition-all duration-300 ease-in-out after:absolute after:-bottom-[0.1em] after:left-0  after:h-1  after:w-full after:rounded-md after:bg-gradient-to-r dark:from-themeGreen dark:via-themeBlue dark:to-themePurple dark:text-themeGreen':
+                        'relative z-10 scale-105 from-red-400 via-violet-200 to-cyan-300 font-bold transition-all duration-300 ease-in-out after:absolute after:-bottom-[0.1em] after:left-0  after:h-1  after:w-full after:rounded-md after:bg-gradient-to-r dark:from-themeGreen dark:via-themeBlue dark:to-themePurple dark:text-themeGreen':
                             selected,
                     }"
                 >

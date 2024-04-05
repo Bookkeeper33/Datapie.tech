@@ -3,9 +3,11 @@
 </script>
 <template>
     <div
-        class="card isolate w-full rounded-xl bg-white/15 shadow-lg ring-1 ring-black/5 sm:max-w-lg lg:max-w-xl"
+        class="card isolate rounded-xl bg-white/15 shadow-lg ring-1 ring-black/5 sm:max-w-lg lg:max-w-xl"
     >
-        <figure class="card-body items-center justify-center gap-5">
+        <figure
+            class="card-body items-center justify-center gap-5 text-pretty antialiased"
+        >
             <blockquote class="flex flex-col gap-3">
                 <Icon
                     name="icomoon-free:quotes-left"
@@ -13,7 +15,7 @@
                     class="text-slate-800 dark:text-themeGreen"
                 />
                 <p
-                    class="text-lg font-semibold text-gray-900 dark:text-white sm:text-xl lg:text-2xl"
+                    class="text-lg text-gray-900 dark:text-white sm:text-xl lg:text-2xl"
                 >
                     {{ testimonial.quote }}
                 </p>
