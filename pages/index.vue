@@ -5,5 +5,6 @@
         <MainPageBenefits />
         <MainPageTechnologies />
         <MainPageTestimonials />
+        <MainPageContact />
     </main>
 </template>
