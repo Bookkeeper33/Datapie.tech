@@ -1,7 +1,11 @@
-type NavData = {
+type Navigation = {
     title: string;
-    subLinks: string[];
-}
+    link: string;
+};
+type NavData = {
+    category: string;
+    navigation: Navigation[];
+};
 
 type Content = {
     id: number;
@@ -12,9 +16,17 @@ type Content = {
 
 type Testimonial = {
     id: number;
-    quote:string;
+    quote: string;
     author: string;
-    occupation:string;
+    occupation: string;
     rating: number;
     avatar: string;
-}
+};
+
+type Service = {
+    route: string;
+    pageName: string;
+    description: string;
+    services: { title: string; serviceDescription: string; icon: string }[];
+    projects?: { title: string; shortDesc: string; image: string }[];
+};
