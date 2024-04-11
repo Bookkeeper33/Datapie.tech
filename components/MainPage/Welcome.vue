@@ -1,22 +1,6 @@
-<script setup lang="ts">
-    const target = ref(null);
-    const targetIsVisible = useIntersection();
-
-    const { stop } = useIntersectionObserver(
-        target,
-        ([{ isIntersecting }], observerElement) => {
-            targetIsVisible.value = isIntersecting;
-        },
-        {
-            rootMargin: "-50% 0px 0px 0px",
-        }
-    );
-</script>
-
 <template>
     <section
         id="welcome"
-        ref="target"
         class="relative before:absolute before:block before:h-full before:w-full before:bg-[url('assets/images/hero.png')] before:bg-cover before:bg-center before:opacity-60"
     >
         <div
