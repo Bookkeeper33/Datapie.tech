@@ -87,7 +87,10 @@
         id="testimonials"
         class="bg-[url('/assets/images/gradient.png')] bg-cover bg-center"
     >
-        <div class="px-5 py-5 sm:px-0 sm:py-10">
+        <div
+            v-motion-slide-visible-once-bottom
+            class="px-5 py-5 sm:px-0 sm:py-10"
+        >
             <h2 class="text-center text-3xl font-bold md:text-5xl">
                 What They Say ?
             </h2>
@@ -97,6 +100,7 @@
             </p>
             <swiper-container
                 ref="swiper"
+                v-motion-slide-visible-once-bottom
                 init="false"
                 class="mt-10 h-auto sm:mt-20"
             >

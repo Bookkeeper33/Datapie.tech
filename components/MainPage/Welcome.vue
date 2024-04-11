@@ -4,6 +4,7 @@
         class="relative before:absolute before:block before:h-full before:w-full before:bg-[url('assets/images/hero.png')] before:bg-cover before:bg-center before:opacity-60"
     >
         <div
+            v-motion-slide-visible-once-top
             class="container relative z-10 mx-auto flex min-h-96 items-center justify-center px-4 py-10 lg:min-h-screen"
         >
             <div class="flex max-w-lg flex-col antialiased md:max-w-2xl">

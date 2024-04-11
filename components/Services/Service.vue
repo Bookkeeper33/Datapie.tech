@@ -7,6 +7,7 @@
         class="lg:relative lg:before:absolute lg:before:block lg:before:h-full lg:before:w-full lg:before:bg-[url('/assets/images/abstraction.png')] lg:before:bg-cover lg:before:bg-center lg:before:opacity-60"
     >
         <div
+            v-motion-slide-visible-once-bottom
             class="container relative z-10 mx-auto flex min-h-dvh flex-col gap-10 px-4 py-10 md:gap-20 md:px-6"
         >
             <div class="space-y-4 self-start">
@@ -34,6 +35,7 @@
                 <div
                     v-for="(service, index) in data.services"
                     :key="index"
+                    v-motion-slide-visible-once-bottom
                     class="dark:prose-invert prose-lg prose-p:prose-base prose-h3:font-bold prose-p:prose-zinc prose flex flex-col items-start space-y-2 lg:max-w-md"
                 >
                     <div class="flex items-center justify-center">
@@ -58,6 +60,7 @@
             class="grid items-center justify-center gap-4 px-4 py-14 text-center md:px-6 lg:gap-10"
         >
             <div
+                v-motion-slide-visible-once-bottom
                 class="prose-xl md:prose-p:text-xl/relaxed lg:prose-p:text-base/relaxed prose-p:prose-zinc dark:prose-invert prose mx-auto space-y-3 antialiased"
             >
                 <h2 class="text-3xl font-bold tracking-tighter">
@@ -71,6 +74,7 @@
                 <div
                     v-for="(project, index) in data.projects"
                     :key="index"
+                    v-motion-slide-visible-once-bottom
                     class="card card-compact isolate max-w-md rounded-xl bg-white/15 antialiased shadow-lg ring-1 ring-black/5"
                 >
                     <figure class="max-h-60">

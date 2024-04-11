@@ -43,10 +43,18 @@
 
 <template>
     <section id="technologies" class="space-y-5 px-5 py-10 lg:p-0">
-        <h2 class="text-center text-xl font-bold sm:text-2xl">
+        <h2
+            v-motion-slide-visible-once-bottom
+            class="text-center text-xl font-bold sm:text-2xl"
+        >
             Our ML and data solutions are powered by the following technologies
         </h2>
-        <swiper-container ref="swiper" init="false" class="">
+        <swiper-container
+            ref="swiper"
+            v-motion-slide-visible-once-bottom
+            init="false"
+            class=""
+        >
             <swiper-slide
                 v-for="(tech, index) in technologies"
                 :key="index"
