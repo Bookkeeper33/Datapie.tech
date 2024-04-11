@@ -43,7 +43,7 @@
                             class="text-slate-800 dark:text-themeGreen"
                         />
                     </div>
-                    <div class="space-y-2">
+                    <div class="space-y-2 antialiased">
                         <h3 class="text-xl font-bold">{{ service.title }}</h3>
                         <p class="text-sm">
                             {{ service.serviceDescription }}
@@ -58,12 +58,12 @@
             class="grid items-center justify-center gap-4 px-4 py-14 text-center md:px-6 lg:gap-10"
         >
             <div
-                class="lg:prose-xl prose-p:prose-zinc dark:prose-invert prose-lg prose mx-auto space-y-3"
+                class="prose-xl md:prose-p:text-xl/relaxed lg:prose-p:text-base/relaxed prose-p:prose-zinc dark:prose-invert prose mx-auto space-y-3 antialiased"
             >
-                <h2 class="font-bold tracking-tighter">Featured Projects</h2>
-                <p
-                    class="md:text-xl/relaxed lg:mx-auto lg:text-base/relaxed xl:text-xl/relaxed"
-                >
+                <h2 class="text-3xl font-bold tracking-tighter">
+                    Featured Projects
+                </h2>
+                <p class="text-base lg:mx-auto">
                     Discover the amazing things of our AI services:
                 </p>
             </div>
@@ -71,7 +71,7 @@
                 <div
                     v-for="(project, index) in data.projects"
                     :key="index"
-                    class="card card-compact isolate max-w-md rounded-xl bg-white/15 shadow-lg ring-1 ring-black/5"
+                    class="card card-compact isolate max-w-md rounded-xl bg-white/15 antialiased shadow-lg ring-1 ring-black/5"
                 >
                     <figure class="max-h-60">
                         <NuxtImg
