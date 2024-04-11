@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-    defineProps<{ title: string; subLinks: string[] }>();
+    defineProps<{ category: string; navigation: Navigation[] }>();
 </script>
 
 <template>
     <div>
         <h3 class="font-semibold">
-            <a href="#">{{ title }}</a>
+            <p>{{ category }}</p>
         </h3>
         <ul class="mt-2 space-y-1">
             <li
-                v-for="(link, index) in subLinks"
+                v-for="(nav, index) in navigation"
                 :key="index"
                 class="flex items-center space-x-2 transition active:translate-x-2 lg:hover:translate-x-2"
             >
@@ -19,7 +19,15 @@
                     size="1.3em"
                 />
 
-                <a href="#" class="decoration-2 hover:underline">{{ link }}</a>
+                <NuxtLink
+                    :to="
+                        category === 'Services'
+                            ? `/services/${nav.link}`
+                            : nav.link
+                    "
+                    class="decoration-2 hover:underline"
+                    >{{ nav.title }}</NuxtLink
+                >
             </li>
         </ul>
     </div>

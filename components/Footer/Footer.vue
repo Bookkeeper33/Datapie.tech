@@ -12,24 +12,24 @@
                     class="row-start-1 flex flex-col justify-start gap-4 sm:col-span-2 sm:flex-row sm:items-center lg:col-span-1 lg:items-start"
                 >
                     <FooterList
-                        :title="services.title"
-                        :sub-links="services.subLinks"
+                        :category="services.category"
+                        :navigation="services.navigation"
                     />
                     <FooterList
-                        :title="company.title"
-                        :sub-links="company.subLinks"
+                        :category="company.category"
+                        :navigation="company.navigation"
                     />
                 </div>
                 <div
                     class="flex items-center gap-x-5 self-center justify-self-center sm:col-span-3 lg:col-span-1"
                 >
                     <img class="h-12 w-12" src="assets/icons/logo.svg" />
-                    <a href="#" class="text-xl font-bold lg:text-2xl">
+                    <NuxtLink to="/" class="text-xl font-bold lg:text-2xl">
                         Datapie<span
                             class="text-themePurple dark:text-themeGreen"
                             >.</span
                         >tech
-                    </a>
+                    </NuxtLink>
                     <UIDarkMode />
                 </div>
                 <div

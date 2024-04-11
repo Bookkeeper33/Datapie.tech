@@ -17,13 +17,13 @@
         >
             <li class="flex flex-col gap-2 text-center">
                 <HeaderNavDisclosure
-                    :title="services.title"
-                    :sub-links="services.subLinks"
+                    :category="services.category"
+                    :navigation="services.navigation"
                 />
             </li>
-            <li>Cases</li>
-            <li>Blog</li>
-            <li>About us</li>
+            <li><NuxtLink to="/cases">Cases</NuxtLink></li>
+            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+            <li><NuxtLink to="/about">About us</NuxtLink></li>
             <li>Contacts</li>
         </ul>
     </Transition>

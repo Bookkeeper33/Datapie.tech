@@ -16,16 +16,17 @@
         "@nuxtjs/device": "^3.1.1",
         "@vueuse/nuxt": "^10.9.0",
         "nuxt": "^3.11.1",
-        "swiper": "^11.1.0",
+        "swiper": "^11.1.1",
         "vue": "^3.4.21",
         "vue-router": "^4.3.0"
     },
     "devDependencies": {
-        "@nuxt/eslint-config": "^0.3.3",
-        "@nuxtjs/color-mode": "^3.3.3",
+        "@nuxt/eslint-config": "^0.3.6",
+        "@nuxtjs/color-mode": "^3.4.0",
         "@nuxtjs/eslint-module": "^4.1.0",
         "@nuxtjs/google-fonts": "^3.2.0",
         "@nuxtjs/tailwindcss": "^6.11.4",
+        "@tailwindcss/typography": "^0.5.12",
         "daisyui": "^4.9.0",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
@@ -33,7 +34,7 @@
         "nuxt-icon": "^0.6.10",
         "prettier": "^3.2.5",
         "prettier-plugin-tailwindcss": "^0.5.13",
-        "typescript": "^5.4.3",
+        "typescript": "^5.4.5",
         "vue-tsc": "^1.8.27"
     }
 }

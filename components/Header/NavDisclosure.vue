@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-    defineProps<{ title: string; subLinks: string[] }>();
+    defineProps<{ category: string; navigation: Navigation[] }>();
 </script>
 
 <template>
     <HeadlessDisclosure v-slot="{ open }">
         <HeadlessDisclosureButton class="flex items-center justify-between"
-            >{{ title }}
+            >{{ category }}
             <Icon
                 name="heroicons:chevron-down"
                 class="transition"
@@ -23,13 +23,13 @@
                 <ul
                     class="flex flex-col items-start gap-y-1 py-2 dark:text-stone-100"
                 >
-                    <a
-                        v-for="(link, index) of subLinks"
+                    <NuxtLink
+                        v-for="(nav, index) of navigation"
                         :key="index"
                         class="transition-colors active:text-themeGreen"
-                        href="#"
+                        :to="`/services/${nav.link}`"
                     >
-                        {{ link }}</a
+                        {{ nav.title }}</NuxtLink
                     >
                 </ul>
             </HeadlessDisclosurePanel>
