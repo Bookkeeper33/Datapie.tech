@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-    defineProps<{ services: NavData }>();
+    defineProps<{ services: NavData; company: NavData }>();
 </script>
 
 <template>
@@ -8,13 +8,13 @@
     >
         <li>
             <HeaderNavPopOver
-                :title="services.title"
-                :sub-links="services.subLinks"
+                :category="services.category"
+                :navigation="services.navigation"
             />
         </li>
-        <li>Cases</li>
-        <li>Blog</li>
-        <li>About us</li>
+        <li v-for="(nav, index) in company.navigation" :key="index">
+            <NuxtLink :to="nav.link">{{ nav.title }}</NuxtLink>
+        </li>
         <li>Contacts</li>
     </ul>
 </template>
