@@ -30,3 +30,11 @@ type Service = {
     services: { title: string; serviceDescription: string; icon: string }[];
     projects?: { title: string; shortDesc: string; image: string }[];
 };
+
+type Case = {
+    title: string;
+    label: string;
+    tags: string[];
+    image: string;
+    studies: { name: string; description: string }[];
+};

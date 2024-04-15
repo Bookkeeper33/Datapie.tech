@@ -10,13 +10,14 @@
             );
         },
     });
-    const obj = useServiceData(route.params.name);
+    const { findService } = useSharedServices();
+    const service = ref(findService(route.params.name));
 </script>
 
 <template>
     <div class="flex-auto">
-        <template v-if="obj">
-            <ServicesService :data="obj" />
+        <template v-if="service">
+            <ServicesService :data="service" />
         </template>
     </div>
 </template>
