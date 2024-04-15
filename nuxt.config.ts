@@ -54,9 +54,6 @@ export default defineNuxtConfig({
         download: true,
         display: "swap",
     },
-    device: {
-        refreshOnResize: true,
-    },
     vue: {
         compilerOptions: {
             isCustomElement: (tag) => tag.includes("swiper"),
