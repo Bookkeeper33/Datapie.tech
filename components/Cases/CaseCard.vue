@@ -4,7 +4,7 @@
 
 <template>
     <div
-        class="group card min-h-min max-w-md cursor-pointer gap-3 lg:hover:ring-2 lg:hover:ring-teal-400 dark:lg:hover:ring-themePurple"
+        class="group card min-h-min cursor-pointer gap-3 lg:hover:ring-2 lg:hover:ring-teal-400 dark:lg:hover:ring-themePurple"
     >
         <figure class="relative overflow-hidden bg-cover bg-no-repeat">
             <NuxtImg

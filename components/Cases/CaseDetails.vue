@@ -53,7 +53,7 @@
                         <span
                             v-for="(tag, index) in data.tags"
                             :key="index"
-                            class="badge badge-outline cursor-pointer select-none transition lg:hover:border-none lg:hover:ring-2 lg:hover:ring-themeGreen"
+                            class="badge badge-outline cursor-pointer select-none font-bold transition lg:hover:border-none lg:hover:ring-2 lg:hover:ring-themeGreen"
                             >{{ tag }}</span
                         >
                     </div>
