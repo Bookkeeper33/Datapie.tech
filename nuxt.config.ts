@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
         "@nuxt/image",
-        "@nuxtjs/eslint-module",
         "@nuxtjs/tailwindcss",
+        "@nuxtjs/eslint-module",
         "@nuxtjs/color-mode",
         "@nuxtjs/google-fonts",
         "nuxt-headlessui",
@@ -37,14 +37,18 @@ export default defineNuxtConfig({
         typeCheck: true,
     },
     colorMode: {
-        preference: "dark",
-        fallback: "light",
+        preference: "light",
+        fallback: "dark",
         classSuffix: "",
     },
-    tailwindcss: {
-        cssPath: "~/assets/css/main.css",
-        exposeConfig: true,
+    css: ["~/assets/css/main.css"],
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
     },
+
     googleFonts: {
         families: {
             Roboto: true,
