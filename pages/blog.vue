@@ -56,7 +56,9 @@
             <div class="flex flex-col gap-5">
                 <h3 class="text-3xl font-bold sm:text-5xl">Latest blogs</h3>
 
-                <div class="flex flex-col gap-5 lg:grid-cols-2 xl:grid-cols-3">
+                <div
+                    class="flex flex-col gap-5 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+                >
                     <BlogItem
                         v-for="(post, index) in blogPosts"
                         :key="index"
