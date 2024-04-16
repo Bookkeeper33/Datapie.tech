@@ -35,7 +35,7 @@
 <template>
     <div class="flex-auto">
         <div class="container mx-auto space-y-10 px-4 pb-10 md:px-6">
-            <UISection>
+            <UISection v-motion-fade-visible-once>
                 <h2 class="text-3xl font-bold sm:text-5xl">
                     Datapie<span class="text-themePurple dark:text-themeGreen"
                         >.</span
@@ -56,12 +56,11 @@
             <div class="flex flex-col gap-5">
                 <h3 class="text-3xl font-bold sm:text-5xl">Latest blogs</h3>
 
-                <div
-                    class="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3"
-                >
+                <div class="flex flex-col gap-5 lg:grid-cols-2 xl:grid-cols-3">
                     <BlogItem
                         v-for="(post, index) in blogPosts"
                         :key="index"
+                        v-motion-slide-visible-once-bottom
                         :post="post"
                     />
                 </div>
