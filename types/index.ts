@@ -38,3 +38,9 @@ type Case = {
     image: string;
     studies: { name: string; description: string }[];
 };
+
+type BlogPost = {
+    title: string;
+    tags: string[];
+    date: Date;
+};
