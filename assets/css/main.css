@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     body {
-        @apply bg-gradient-to-tr from-[#7354F2] to-[#80F08B] dark:custom-them-night;
+        @apply dark:custom-them-night  bg-gradient-to-tr from-[#7354F2] to-[#80F08B] text-slate-800 dark:text-neutral-100;
     }
 }
 
@@ -32,7 +31,7 @@
                 rgba(255, 255, 255, 0.947) 1px,
                 transparent 1px
             );
-            
+
         background-size:
             550px 550px,
             350px 350px,
