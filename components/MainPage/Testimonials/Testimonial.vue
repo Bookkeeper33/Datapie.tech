@@ -14,9 +14,7 @@
                     size="1.5em"
                     class="text-slate-800 dark:text-themeGreen"
                 />
-                <p
-                    class="text-lg text-gray-900 dark:text-white sm:text-xl lg:text-2xl"
-                >
+                <p class="text-lg sm:text-xl lg:text-2xl">
                     {{ testimonial.quote }}
                 </p>
                 <Icon

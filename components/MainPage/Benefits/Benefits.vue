@@ -56,15 +56,11 @@
                 <h2 class="mb-5 text-3xl font-bold lg:text-5xl">
                     Why choose us ?
                 </h2>
-                <p
-                    class="font-semibold text-gray-800 dark:text-white sm:text-lg"
-                >
+                <p class="font-semibold sm:text-lg">
                     We are not just another data company. We are your trusted
                     partner in your data-driven journey.
                 </p>
-                <p
-                    class="font-semibold text-gray-800 dark:text-white sm:text-lg"
-                >
+                <p class="font-semibold sm:text-lg">
                     Here are some of the reasons why you should choose us:
                 </p>
             </div>
