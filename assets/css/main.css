@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply dark:custom-them-night bg-gradient-to-tr from-[#7354F2] to-[#80F08B] text-slate-900 dark:text-stone-100;
+        @apply dark:custom-them-night bg-gradient-to-tr from-[#7354F2] to-[#80F08B] text-slate-900 dark:text-neutral-100;
     }
 }
 
