@@ -15,6 +15,5 @@
         <li v-for="(nav, index) in company.navigation" :key="index">
             <NuxtLink :to="nav.link">{{ nav.title }}</NuxtLink>
         </li>
-        <li>Contacts</li>
     </ul>
 </template>

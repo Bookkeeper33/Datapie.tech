@@ -53,18 +53,19 @@
                     we will get back to you as soon as possible.
                 </p>
             </UISection>
-            <div class="flex flex-col gap-5">
+            <div v-motion-slide-visible-once-bottom class="flex flex-col gap-5">
                 <h3 class="text-3xl font-bold sm:text-5xl">Latest blogs</h3>
 
                 <div
                     class="flex flex-col gap-5 lg:grid lg:grid-cols-2 xl:grid-cols-3"
                 >
-                    <BlogItem
+                    <div
                         v-for="(post, index) in blogPosts"
                         :key="index"
                         v-motion-slide-visible-once-bottom
-                        :post="post"
-                    />
+                    >
+                        <BlogItem :post="post" class="h-full w-full" />
+                    </div>
                 </div>
             </div>
         </div>
