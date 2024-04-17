@@ -55,7 +55,7 @@
                     class="mr-5 inline-block dark:text-themeGreen"
                 />
                 <span
-                    class="font-medium underline decoration-wavy decoration-from-font underline-offset-4"
+                    class="font-medium underline decoration-wavy decoration-from-font underline-offset-4 dark:decoration-themeGreen"
                     >{{ value.name }}</span
                 >
                 <p class="mt-5">

@@ -19,7 +19,7 @@
         >
             <div>
                 <p
-                    class="text-sm font-medium uppercase tracking-widest text-pink-500"
+                    class="text-sm font-bold uppercase tracking-widest text-teal-300"
                 >
                     {{ position }}
                 </p>

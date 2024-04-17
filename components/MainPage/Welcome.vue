@@ -1,3 +1,14 @@
+<script setup lang="ts">
+    const scrollTo = () => {
+        const services = document.getElementById("services");
+        services?.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "nearest",
+        });
+    };
+</script>
+
 <template>
     <section
         id="welcome"
@@ -32,7 +43,7 @@
                     unprecedented success.
                 </p>
 
-                <UIButton class="mt-10 self-center px-16 py-3"
+                <UIButton class="mt-10 self-center px-16 py-3" @click="scrollTo"
                     >Get started!</UIButton
                 >
             </div>
