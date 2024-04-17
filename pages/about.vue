@@ -26,7 +26,7 @@
             </div>
         </div>
         <div
-            class="container mx-auto mt-10 pb-10 gap-10 px-4 sm:flex sm:flex-col md:gap-16 md:px-6"
+            class="container mx-auto mt-10 gap-10 px-4 pb-10 flex flex-col md:gap-16 md:px-6"
         >
             <AboutStory />
             <AboutValues />
