@@ -14,7 +14,7 @@
         class="sticky left-0 top-0 isolate z-50 bg-gradient-to-br from-[#7354F2]/60 to-[#80F08B]/60 backdrop-blur dark:bg-none"
     >
         <div
-            class="mx-auto px-4 py-5 lg:container md:px-7 lg:flex lg:flex-row lg:items-center lg:justify-between"
+            class="mx-auto px-4 py-5 lg:container md:px-7 lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-10"
         >
             <div class="flex flex-1 items-center">
                 <NuxtLink to="/" class="flex items-center gap-x-5">
@@ -26,7 +26,6 @@
                         >tech
                     </span>
                 </NuxtLink>
-
                 <HeaderBurgerMenu
                     :is-open="isNavOpen"
                     @toggle-nav="toggleBurger"
@@ -47,6 +46,11 @@
                     />
                 </ClientOnly>
             </nav>
+            <UIButton class="hidden p-2 px-4 lg:block"
+                ><a href="mailto:datapie.tech@gmail.com"
+                    >Get in touch</a
+                ></UIButton
+            >
         </div>
     </header>
 </template>
